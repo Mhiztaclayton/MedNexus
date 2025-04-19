@@ -1,4 +1,4 @@
-# Welcome to your Lovable project
+# MEDNEXUS: Healthcare Blockchain Platform
 
 ## Project info
 
