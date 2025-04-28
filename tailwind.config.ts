@@ -28,6 +28,30 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				medblue: {
+					50: '#EBF5FF',
+					100: '#D6EBFF',
+					200: '#A8D2FF',
+					300: '#7AB9FF',
+					400: '#4CA1FF',
+					500: '#0A4DA6',
+					600: '#0A3D85',
+					700: '#072E64',
+					800: '#051F43',
+					900: '#020F21',
+				},
+				medteal: {
+					50: '#EDFCFD',
+					100: '#D6F5F9',
+					200: '#A8EBF4',
+					300: '#7AE0EE',
+					400: '#55B3E0',
+					500: '#2AA3D0',
+					600: '#1F82A7',
+					700: '#17627E',
+					800: '#0F4154',
+					900: '#07212A',
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
