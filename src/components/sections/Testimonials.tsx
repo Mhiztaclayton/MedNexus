@@ -8,13 +8,13 @@ const testimonials = [
     quotes: [
       {
         text: "MEDNEXUS has transformed our ability to access patient records across departments while maintaining strict security standards.",
-        author: "Dr. Amanda Chen",
-        role: "Chief Medical Officer, Metropolitan Hospital",
+        author: "Dr. Victoria Unwah",
+        role: "Chief Medical Officer, Bertha Hospital",
       },
       {
         text: "The reduction in administrative overhead has been remarkable. Our staff can focus more on patient care rather than paperwork.",
-        author: "Michael Rodriguez",
-        role: "Hospital Administrator, City Medical Center",
+        author: "Emmanuella Edidiong",
+        role: "Hospital Administrator, Bertha Hospital",
       },
     ],
   },
@@ -24,12 +24,12 @@ const testimonials = [
     quotes: [
       {
         text: "For the first time, I feel in control of my medical data. I can share my complete medical history with new doctors instantly.",
-        author: "Sarah Thompson",
+        author: "Success Ejigwe",
         role: "Patient",
       },
       {
         text: "The peace of mind knowing my sensitive health information is secure but accessible when needed is invaluable.",
-        author: "James Wilson",
+        author: "Richard Peter",
         role: "Patient & Healthcare Advocate",
       },
     ],
@@ -40,12 +40,12 @@ const testimonials = [
     quotes: [
       {
         text: "MEDNEXUS has opened up unprecedented access to anonymized clinical data, accelerating our research on chronic diseases.",
-        author: "Dr. Elizabeth Grant",
+        author: "Dr. Aso Bassey",
         role: "Lead Researcher, Medical Innovation Institute",
       },
       {
         text: "The quality and integrity of data we can now access has significantly improved our research outcomes and publications.",
-        author: "Dr. Robert Yamamoto",
+        author: "Dr. Joyce Essung",
         role: "Clinical Research Director, University Medical School",
       },
     ],
@@ -56,12 +56,12 @@ const testimonials = [
     quotes: [
       {
         text: "Claims processing that used to take weeks now happens in minutes, with full verification through the blockchain.",
-        author: "Jessica Miller",
+        author: "Mfonobong Etim",
         role: "Claims Manager, HealthGuard Insurance",
       },
       {
         text: "The reduction in fraud and automated verification has allowed us to pass savings directly to our customers.",
-        author: "Daniel Park",
+        author: "Caroline Akpan",
         role: "COO, MediCover Insurance Group",
       },
     ],

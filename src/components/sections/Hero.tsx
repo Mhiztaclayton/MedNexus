@@ -102,7 +102,7 @@ const Hero = () => {
                         <Button size="sm" variant="outline" className="h-7 text-xs">Approve</Button>
                       </div>
                       <div className="flex items-center justify-between text-sm p-2 bg-white rounded border border-gray-100">
-                        <span>City Hospital Lab</span>
+                        <span>Bertha Hospital</span>
                         <Button size="sm" variant="outline" className="h-7 text-xs">Approve</Button>
                       </div>
                     </div>
