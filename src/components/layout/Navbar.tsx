@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import WalletConnect from "@/components/wallet/WalletConnect";
 
 const Navbar = () => {
   return (
@@ -18,8 +19,8 @@ const Navbar = () => {
           <Link to="#" className="text-gray-700 hover:text-medblue-600 font-medium">About Us</Link>
         </div>
 
-        <div className="flex items-center gap-4">
-          <Button variant="outline" className="hidden sm:inline-flex">Login</Button>
+        <div className="flex items-center gap-3">
+          <WalletConnect variant="outline" className="hidden sm:inline-flex" />
           <Button className="bg-gradient-to-r from-medblue-500 to-medteal-500 text-white">Try Demo</Button>
         </div>
       </div>
