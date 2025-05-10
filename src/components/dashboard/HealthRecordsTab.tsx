@@ -2,34 +2,38 @@
 import React from 'react';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { File, Shield } from "lucide-react";
+import { File, Shield, User } from "lucide-react";
 
 const healthRecords = [
   {
+    patientName: "John Doe",
     title: "Annual Physical Results",
     date: "Apr 15, 2025",
-    provider: "Dr. Sarah Johnson",
+    doctor: "Dr. Sarah Johnson",
     type: "Examination",
     status: "Verified",
   },
   {
+    patientName: "Emma Smith",
     title: "Blood Work Analysis",
     date: "Mar 22, 2025",
-    provider: "City Hospital Lab",
+    doctor: "Dr. Michael Chen",
     type: "Laboratory",
     status: "Verified",
   },
   {
+    patientName: "Robert Williams",
     title: "Vaccination Record",
     date: "Feb 10, 2025",
-    provider: "Community Health Clinic",
+    doctor: "Dr. Lisa Garcia",
     type: "Immunization",
     status: "Verified",
   },
   {
+    patientName: "Sarah Johnson",
     title: "Cardiology Consultation",
     date: "Jan 05, 2025",
-    provider: "Dr. Robert Chen",
+    doctor: "Dr. Robert Chen",
     type: "Specialist",
     status: "Verified",
   },
@@ -39,8 +43,8 @@ const HealthRecordsTab = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Your Health Records</CardTitle>
-        <CardDescription>View and manage your encrypted health records</CardDescription>
+        <CardTitle>Patient Health Records</CardTitle>
+        <CardDescription>View and manage encrypted patient health records</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
@@ -48,12 +52,13 @@ const HealthRecordsTab = () => {
             <div key={index} className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200">
               <div className="flex items-center">
                 <div className="w-10 h-10 rounded-full bg-medblue-100 flex items-center justify-center text-medblue-500 mr-4">
-                  <File className="h-5 w-5" />
+                  <User className="h-5 w-5" />
                 </div>
                 <div>
-                  <div className="font-medium">{record.title}</div>
+                  <div className="font-medium">{record.patientName}</div>
+                  <div className="text-sm text-gray-700">{record.title}</div>
                   <div className="text-sm text-gray-500">
-                    {record.date} • {record.provider}
+                    {record.date} • {record.doctor}
                   </div>
                 </div>
               </div>
@@ -74,7 +79,7 @@ const HealthRecordsTab = () => {
         </div>
         
         <div className="mt-6 text-center">
-          <Button variant="outline">View All Records</Button>
+          <Button variant="outline">View All Patient Records</Button>
         </div>
       </CardContent>
     </Card>

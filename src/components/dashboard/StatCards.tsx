@@ -1,35 +1,35 @@
 
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
-import { File, Users, Shield, Search } from "lucide-react";
+import { File, Users, Shield, Search, UserPlus } from "lucide-react";
 
 const statItems = [
   {
-    icon: <File className="h-5 w-5" />,
-    title: "Total Records",
-    value: "12",
-    change: "+2 this month",
+    icon: <UserPlus className="h-5 w-5" />,
+    title: "Total Patients",
+    value: "1,248",
+    change: "+24 this month",
     color: "bg-blue-500",
   },
   {
+    icon: <File className="h-5 w-5" />,
+    title: "Health Records",
+    value: "4,536",
+    change: "+152 this month",
+    color: "bg-green-500",
+  },
+  {
     icon: <Users className="h-5 w-5" />,
-    title: "Access Requests",
-    value: "3",
-    change: "2 pending approval",
+    title: "Staff Members",
+    value: "84",
+    change: "12 departments",
     color: "bg-amber-500",
   },
   {
     icon: <Shield className="h-5 w-5" />,
     title: "Security Score",
     value: "98%",
-    change: "+5% from last check",
-    color: "bg-green-500",
-  },
-  {
-    icon: <Search className="h-5 w-5" />,
-    title: "Record Views",
-    value: "24",
-    change: "Last 30 days",
+    change: "+5% from last audit",
     color: "bg-purple-500",
   },
 ];

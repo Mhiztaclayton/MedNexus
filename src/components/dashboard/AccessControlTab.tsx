@@ -9,6 +9,7 @@ const currentPermissions = [
     name: "Dr. Sarah Johnson",
     role: "Primary Care Physician",
     access: "Full Access",
+    departments: "General Medicine, Cardiology",
     expires: "Jan 15, 2026",
     status: "Active",
   },
@@ -16,6 +17,7 @@ const currentPermissions = [
     name: "City Hospital Lab",
     role: "Testing Facility",
     access: "Test Results Only",
+    departments: "Laboratory, Radiology",
     expires: "Jul 22, 2025",
     status: "Active",
   },
@@ -23,6 +25,7 @@ const currentPermissions = [
     name: "Dr. Robert Chen",
     role: "Cardiologist",
     access: "Cardiology Records",
+    departments: "Cardiology",
     expires: "Aug 10, 2025",
     status: "Active",
   },
@@ -33,12 +36,14 @@ const pendingRequests = [
     name: "Medical Research Institute",
     role: "Research Organization",
     access: "Anonymized Data",
+    departments: "Research",
     requested: "Apr 18, 2025",
   },
   {
     name: "Dr. Linda Martinez",
     role: "Dermatologist",
     access: "Dermatology Records",
+    departments: "Dermatology",
     requested: "Apr 17, 2025",
   },
 ];
@@ -47,13 +52,13 @@ const AccessControlTab = () => {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Access Management</CardTitle>
-        <CardDescription>Control who can access your medical records</CardDescription>
+        <CardTitle>Staff Access Management</CardTitle>
+        <CardDescription>Control hospital staff access to patient records</CardDescription>
       </CardHeader>
       <CardContent>
         <div className="space-y-6">
           <div>
-            <h3 className="text-lg font-medium mb-4">Current Access Permissions</h3>
+            <h3 className="text-lg font-medium mb-4">Current Staff Access Permissions</h3>
             <div className="space-y-3">
               {currentPermissions.map((permission, index) => (
                 <div key={index} className="flex items-center justify-between p-4 bg-white rounded-lg border border-gray-200">
@@ -64,6 +69,7 @@ const AccessControlTab = () => {
                     <div>
                       <div className="font-medium">{permission.name}</div>
                       <div className="text-sm text-gray-500">{permission.role}</div>
+                      <div className="text-xs text-gray-500">{permission.departments}</div>
                     </div>
                   </div>
                   <div className="flex flex-col md:flex-row items-end md:items-center gap-2 md:gap-4">
@@ -99,7 +105,7 @@ const AccessControlTab = () => {
                     <div>
                       <div className="font-medium">{request.name}</div>
                       <div className="text-sm text-gray-500">
-                        {request.role} • Requested: {request.requested}
+                        {request.role} • {request.departments} • Requested: {request.requested}
                       </div>
                     </div>
                   </div>

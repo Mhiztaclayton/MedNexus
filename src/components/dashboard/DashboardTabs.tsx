@@ -9,8 +9,8 @@ const DashboardTabs = () => {
   return (
     <Tabs defaultValue="health-records" className="w-full">
       <TabsList className="mb-6">
-        <TabsTrigger value="health-records">Health Records</TabsTrigger>
-        <TabsTrigger value="access-control">Access Control</TabsTrigger>
+        <TabsTrigger value="health-records">Patient Records</TabsTrigger>
+        <TabsTrigger value="access-control">Staff Access</TabsTrigger>
         <TabsTrigger value="blockchain">Blockchain Verification</TabsTrigger>
       </TabsList>
       
